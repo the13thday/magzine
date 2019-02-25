@@ -1,0 +1,40 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/catalog/catalog",
+    "pages/mark/mark",
+    "pages/search/search"
+  ],
+  "tabBar": {
+    "color": "#aaaaaa",
+    "selectedColor": "#000000",
+    "backgroundColor": "#ffeedd",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/catalog/catalog",
+        "text": "目录",
+        "iconPath": "images/tab/catalog_selected.png",
+        "selectedIconPath": "images/tab/catalog.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "杂志",
+        "iconPath": "/images/tab/index_selected.png",
+        "selectedIconPath": "images/tab/index.png"
+      },
+      {
+        "pagePath": "pages/mark/mark",
+        "text": "mark",
+        "iconPath": "/images/tab/mark_selected.png",
+        "selectedIconPath": "images/tab/mark.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "青芒杂志",
+    "navigationBarTextStyle": "black"
+  }
+}

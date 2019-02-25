@@ -1,0 +1,21 @@
+/* components/articleList/cmp.wxss */
+.container {
+    background-color: #ddd;
+    padding: 25rpx;
+}
+.article {
+    display: block; /*控制组件样式需要加上 block*/
+    margin-top: 30rpx;
+}
+.status {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20rpx 0;
+}
+.no-more {
+    text-align: center;
+    font-size: 28rpx;
+    letter-spacing: 2rpx;
+    color: #666;
+}

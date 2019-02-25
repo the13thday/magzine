@@ -1,0 +1,45 @@
+<!--components/article/cmp.wxml-->
+<view class="container">
+    <view class="banner-container">
+        <c-banner name="{{article.mark.people}}" count="{{article.mark.count}}" avatar="{{article.mark.avatar}}"></c-banner>
+    </view>
+    <view class="content-container">
+         <c-bigImg wx:if="{{article.type === 0}}" 
+                img-src="{{article.imgArray[0]}}"
+                main-title="{{article.mainTitle}}"
+                sub-title="{{article.subHead}}"/>
+        <c-pureText wx:elif="{{article.type === 4}}"
+                    main-title="{{article.mainTitle}}"
+                    sub-title="{{article.subHead}}"/>
+        <c-imgText wx:elif="{{article.type === 2}}"
+                    img-src="{{article.imgArray[0]}}"
+                    main-title="{{article.mainTitle}}"
+                    sub-title="{{article.subHead}}" />
+        <c-video wx:elif="{{article.type === 3}}"
+                    src="{{article.video.src}}"
+                    video-id="{{article.video.id}}"
+                    poster="{{article.video.poster}}"
+                    main-title="{{article.mainTitle}}"
+                    duration="{{article.video.duration}}"/>
+        <c-nineBlockImg wx:else img-arr="{{article.imgArray}}"
+                    main-title="{{article.mainTitle}}"/>
+    </view>
+    <view class="controller-container">
+        <view>
+            <c-tag tag-name="{{article.tag}}" tag-id="{{article.tagId}}"></c-tag>
+        </view>
+        <view class="controller">
+            <c-more class="handler" tag="{{article.tag}}"></c-more>
+            <c-imgBtn class="handler share-btn" open-type="share">
+                <image class="btn-image" src="/images/mark/relay.png"></image>
+            </c-imgBtn>
+            <c-like class="handler" like="{{liked}}" bind:likeToggle="onLikeTogggle"></c-like>
+        </view>
+    </view>
+</view>
+
+<!-- 2 图文 -->
+<!-- 1 9 -->
+<!-- 3 video -->
+<!-- 4 chun -->
+<!-- 0 big -->

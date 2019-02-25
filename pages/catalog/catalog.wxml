@@ -1,0 +1,22 @@
+<!--pages/catalog/catalog.wxml-->
+<view class="container">
+    <c-search class="search" value="{{searchWord}}"></c-search>
+    <view class="catalog-title-container">
+        <text class="catalog-title">我的杂志</text>
+        <text class="catalog-sub-title">管理杂志</text>
+    </view>
+    <c-tagList class="tagList" tag-list="{{subscribedTagList}}">
+        <c-add class="add-btn" slot="before"></c-add>
+    </c-tagList>
+
+    <view class="subscribeList-container">
+        <view class="subscribeList" wx:for="{{tagList}}" wx:for-item="tagItem" wx:key="index">
+            <view class="list-title">{{tagItem.title}} ></view>
+            <view class="list-item" wx:for="{{tagItem.tagList}}" wx:key="tagId">
+                <view class="tag-name"># {{item.tag}}</view>
+                <c-subscribe class="subscribe-btn" catch:toggleSubscribe="onSubscribe" tag="{{item.tag}}" tag-id="{{item.tagId}}"></c-subscribe>
+            </view>
+        </view>
+    </view>
+    
+</view>

@@ -1,0 +1,8 @@
+<!--components/articleList/cmp.wxml-->
+<view class="container">
+    <c-article class="article" wx:for="{{articleList}}" wx:key="{{artId}}" article="{{item}}"/>
+    <view class="status">
+        <text class="no-more" wx:if="{{noMoreData}}">{{noMoreText}}</text>
+        <c-loading hidden="{{!loading}}"/>
+    </view>
+</view>

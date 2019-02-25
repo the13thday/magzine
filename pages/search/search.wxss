@@ -1,0 +1,30 @@
+/* pages/search/search.wxss */
+.container {
+    padding: 20rpx;
+}
+.loading-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+.loading {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.recommend {
+    margin:40rpx;
+    border-top: 2rpx solid #999;
+    border-bottom: 2rpx solid #999;
+    padding: 40rpx 20rpx;
+}
+.title {
+    font-size: 50rpx;
+    margin-bottom: 40rpx;
+
+}
+.content {
+    font-size: 28rpx;
+    line-height: 1.6;
+}

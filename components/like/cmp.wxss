@@ -1,0 +1,8 @@
+/* components/like/cmp.wxss */
+.container {
+    display: inline-block;
+}
+.image {
+    width: 50rpx;
+    height: 50rpx;
+}

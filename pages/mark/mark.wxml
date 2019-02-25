@@ -1,0 +1,16 @@
+
+<view class="container">
+    <view class="user-container">
+        <view class="user-info">
+            <text class="user-name">{{userInfo.nickName}}</text>
+            <image class="user-avatar" wx:if="{{authorized}}" src="{{userInfo.avatarUrl}}"></image>
+            <c-imgBtn  class="login-btn" wx:else open-type="getUserInfo" bind:getuserinfo="onGetUserInfo">
+                <image src="/images/mark/login.png"></image>
+            </c-imgBtn >
+        </view>
+        <c-imgBtn class="share" open-type="share">
+            <image src="/images/mark/relay.png"></image>
+        </c-imgBtn>
+    </view>
+    <c-articleList class="article-list" article-list="{{articleList}}"></c-articleList>
+</view>

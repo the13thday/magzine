@@ -1,0 +1,5 @@
+<!--components/like/cmp.wxml-->
+<view class="container" bindtap="onLikeToggle">
+    <image class="image" hidden="{{!like}}" src="./images/circle_fill.png"></image>
+    <image class="image" hidden="{{like}}" src="./images/circle.png"></image>
+</view>

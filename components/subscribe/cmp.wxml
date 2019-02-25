@@ -1,0 +1,2 @@
+<!--components/subscribe/cmp.wxml-->
+<view class="container {{subscribed ? 'active' : ''}}" bindtap="onTap">{{subscribed ? "已订阅" : "订阅"}}</view>

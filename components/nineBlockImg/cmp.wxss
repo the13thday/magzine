@@ -1,0 +1,37 @@
+/* components/nineBlockImg/cmp.wxss */
+.container {
+    width: 700rpx;
+}
+.image-container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    height: 700rpx;
+}
+.image {
+    width: 30%;
+    height: 30%;
+}
+.image-num {
+    position: absolute;
+    right: 80rpx;
+    bottom: 80rpx;
+    color: #fff;
+    padding: 0rpx 10rpx;
+    background-color: #666;
+    border-radius: 6rpx;
+}
+.title-container {
+    padding: 10rpx 20rpx;
+    letter-spacing: 2rpx;
+}
+.mainTitle {
+    font-size: 40rpx;
+    font-weight: 600;
+}
+.subTitle {
+    font-size: 28rpx;
+    color: #666;
+}

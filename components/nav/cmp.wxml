@@ -1,0 +1,9 @@
+<!--components/nav/cmp.wxml-->
+<scroll-view class="container" scroll-x="true" scroll-with-animation="true" scroll-into-view="{{navId}}">
+    <text class="text {{active === index ? 'active' : ''}}" 
+    id="{{'navItem' + index}}" 
+    wx:for="{{navList}}" wx:key="index"
+    data-index="{{index}}" bindtap="onScrollTap">{{item}}</text>
+</scroll-view>
+
+

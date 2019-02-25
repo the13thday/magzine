@@ -1,0 +1,25 @@
+/* components/search/cmp.wxss */
+.container {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    font-size: 28rpx;
+}
+.search {
+    padding: 20rpx 0 20rpx 20rpx;
+    width: 600rpx;
+    background-color: #f3f3f3;
+    flex: 1 1 auto;
+}
+.text {
+    flex-basis: 100rpx;
+    height: 92rpx;
+    text-align:center;
+    line-height: 92rpx;
+    background-color: rgb(49,126,243);
+    color: #fff;
+}
+.active {
+    background-color: rgb(55,136,255);
+    color: #fff;
+}

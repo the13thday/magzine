@@ -1,0 +1,11 @@
+<!--components/recommend/cmp.wxml-->
+<view class="container">
+        <view class="main-title">{{magzineId === 0 ?  time : magzineType[magzineId]}}</view>
+        <view class="title">{{recommend.title}}</view>
+    <view class="image-container">
+        <image class="image" wx:if="{{recommend.imgSrc}}" src="{{recommend.imgSrc}}"></image>
+        <view class="loading-bg" wx:else>
+            <view class="loading"></view>
+        </view>
+    </view>
+</view>

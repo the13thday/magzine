@@ -1,0 +1,16 @@
+/* components/subscribe/cmp.wxss */
+.container {
+    display: inline-block;
+    border: 2rpx solid #000;
+    background-color: #333;
+    font-size: 40rpx;
+    letter-spacing: 2rpx;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.active {
+    background-color: #fff;
+    color: #000;
+}

@@ -1,0 +1,7 @@
+/* components/bigImg/cmp.wxss */
+.image {
+    width: 100%;
+}
+.text {
+    padding: 0 25rpx;
+}

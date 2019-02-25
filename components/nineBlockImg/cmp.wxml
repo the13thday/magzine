@@ -1,0 +1,11 @@
+<!--components/nineBlockImg/cmp.wxml-->
+<view class="container">
+    <view class="image-container">
+        <image class="image" catch:tap="previewImage" wx:if="{{index < 9}}" data-index="{{index}}" wx:for="{{imgArr}}" wx:key="*this" src="{{item}}"></image>
+        <text class="image-num" wx:if="{{imgArr.length > 9}}">{{imgArray.length}}</text>
+    </view>
+    <view class="title-container">
+        <text class="mainTitle" wx:if="{{mainTitle}}">{{mainTitle}}</text>
+        <text class="subTitle" wx:if="{{subTitle}}">{{subTitle}}</text>
+    </view>
+</view>

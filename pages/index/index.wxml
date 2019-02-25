@@ -1,0 +1,13 @@
+
+<c-nav class="nav" bind:switchnav="onNav"></c-nav>
+<c-recommend class="recommend" recommend="{{recommend}}" magzine-id="{{magzineId}}"></c-recommend>
+<c-tagList tag-list="{{markList}}">
+    <c-add wx:if="{{magzineId === 0}}" class="add" slot="before">+</c-add>
+    <view wx:if="{{magzineId === 0}}" class="to-catalog" slot="after" catch:tap="onCatalog">•••</view>
+</c-tagList>
+
+<c-articleList article-list="{{articleList}}" more="{{loadMore}}" magzine-id="{{magzineId}}"></c-articleList>
+
+<view class="loading-bg" wx:if="{{loading}}">
+    <c-loading class="laoding"></c-loading>
+</view>

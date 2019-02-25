@@ -1,0 +1,15 @@
+<!--pages/search/search.wxml-->
+<view class="container">
+    <c-search value="{{value}}"></c-search>
+    <view class="loading-container" wx:if="{{loading}}">
+        <c-loading class="loading"></c-loading>
+    </view>
+    <view class="recommend">
+        <view class="title">{{recommend.tag}}</view>
+        <view class="content">
+            <view wx:for="{{recommend.recommend}}" wx:key="*this">{{item}}</view>
+        </view>
+    </view>
+    <c-articleList class="article-list" article-list="{{articleList}}" more="{{more}}" key-word="{{value}}"></c-articleList>
+
+</view>

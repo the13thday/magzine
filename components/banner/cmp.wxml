@@ -1,0 +1,7 @@
+<!--components/banner/cmp.wxml-->
+<view class="container">
+    <view class="banner">
+        <image class="avatar" src="{{avatar}}"></image>
+        <text class="text">{{name}} 等 {{count}} 人马克了</text>
+    </view>
+</view>
